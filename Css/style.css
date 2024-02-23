@@ -134,23 +134,7 @@ footer {
 .skills p, h2, li {
     margin: 10px;
 }
-@media (max-width: 768px) {
-    .cv-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .cvpic {
-        margin-left: 0;
-        max-width: 100%;
-    }
-    .info-wrapper{
-        flex-direction: column;
-        align-items: center;
-    }
-    .horizontal-wrapper {
-        flex-direction: column;
-    }
-}
+
 
 .contact-container{
     display: flex;
@@ -193,16 +177,7 @@ footer {
  }
  
  @media (max-width: 768px) {
-     .pres-container {
-         flex-direction: column; /* Använder en kolumn på små skärmar */
-         align-items: center;
-     }
- 
-     #myself, .text {
-         width: 100%; /* Justerar bredden för mindre skärmar */
-         margin: 10px 0; /* Centrerar innehållet */
-         padding: 20px;
-     }
+     
  }
  
  #myself {
@@ -311,15 +286,48 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
-@media (max-width: 768px) {
-    .projectholder {
-        flex-direction: column;
-        align-items: center; 
-    }
+
+.place-container{
+    display: flex;
+    flex-direction: column;
 }
 
+.rashford img{
+    max-width: 100%;
+    height: auto;
+}
 
+@media (max-width: 768px) {
+    .cv-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cvpic {
+        margin-left: 0;
+        max-width: 100%;
+    }
+    .info-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .horizontal-wrapper {
+        flex-direction: column;
+    }
+    .pres-container {
+        flex-direction: column; /* Använder en kolumn på små skärmar */
+        align-items: center;
+    }
 
+    #myself, .text {
+        width: 100%; /* Justerar bredden för mindre skärmar */
+        margin: 10px 0; /* Centrerar innehållet */
+        padding: 20px;
+    }
+    .place-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 
 
